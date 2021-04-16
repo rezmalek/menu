@@ -1,23 +1,5 @@
-/*
-=============== 
-Variables
-===============
-*/
-
+/* Variables */
 :root {
-  /* dark shades of primary color*/
-  --clr-primary-1: hsl(205, 86%, 17%);
-  --clr-primary-2: hsl(205, 77%, 27%);
-  --clr-primary-3: hsl(205, 72%, 37%);
-  --clr-primary-4: hsl(205, 63%, 48%);
-  /* primary/main color */
-  --clr-primary-5: hsl(205, 78%, 60%);
-  /* lighter shades of primary color */
-  --clr-primary-6: hsl(205, 89%, 70%);
-  --clr-primary-7: hsl(205, 90%, 76%);
-  --clr-primary-8: hsl(205, 86%, 81%);
-  --clr-primary-9: hsl(205, 90%, 88%);
-  --clr-primary-10: hsl(205, 100%, 96%);
   /* darkest grey - used for headings */
   --clr-grey-1: hsl(209, 61%, 16%);
   --clr-grey-2: hsl(211, 39%, 23%);
@@ -32,11 +14,6 @@ Variables
   --clr-grey-10: hsl(210, 36%, 96%);
   --clr-white: #fff;
   --clr-gold: #c59d5f;
-
-  --clr-red-dark: hsl(360, 67%, 44%);
-  --clr-red-light: hsl(360, 71%, 66%);
-  --clr-green-dark: hsl(125, 67%, 44%);
-  --clr-green-light: hsl(125, 71%, 66%);
   --clr-black: #222;
   --transition: all 0.3s linear;
   --spacing: 0.1rem;
@@ -46,12 +23,8 @@ Variables
   --max-width: 1170px;
   --fixed-width: 620px;
 }
-/*
-=============== 
-Global Styles
-===============
-*/
 
+/* Global Styles */
 *,
 ::after,
 ::before {
@@ -67,13 +40,9 @@ body {
   line-height: 1.5;
   font-size: 0.875rem;
 }
-ul {
-  list-style-type: none;
-}
 a {
   text-decoration: none;
 }
-h1,
 h2,
 h3,
 h4 {
@@ -81,9 +50,6 @@ h4 {
   text-transform: capitalize;
   line-height: 1.25;
   margin-bottom: 0.75rem;
-}
-h1 {
-  font-size: 3rem;
 }
 h2 {
   font-size: 2rem;
@@ -99,9 +65,6 @@ p {
   color: var(--clr-grey-5);
 }
 @media screen and (min-width: 800px) {
-  h1 {
-    font-size: 4rem;
-  }
   h2 {
     font-size: 2.5rem;
   }
@@ -114,34 +77,26 @@ p {
   body {
     font-size: 1rem;
   }
-  h1,
   h2,
   h3,
   h4 {
     line-height: 1;
   }
 }
-/*  global classes */
 
-/* section */
+/* Section */
 .section {
   width: 90vw;
   margin: 0 auto;
   max-width: var(--max-width);
 }
-
 @media screen and (min-width: 992px) {
   .section {
     width: 95vw;
   }
 }
 
-/*
-=============== 
-Menu
-===============
-*/
-
+/* Menu */
 .menu {
   padding: 5rem 0;
 }
@@ -191,7 +146,7 @@ Menu
   gap: 1rem 2rem;
   max-width: 25rem;
 }
-.photo {
+.img {
   object-fit: cover;
   height: 200px;
   width: 100%;
@@ -202,7 +157,7 @@ Menu
 .item-info header {
   display: flex;
   justify-content: space-between;
-  border-bottom: 0.5px dotted var(--clr-grey-5);
+  border-bottom: 0.4px solid var(--clr-grey-7);
 }
 .item-info h4 {
   margin-bottom: 0.5rem;
@@ -214,14 +169,13 @@ Menu
   margin-bottom: 0;
   padding-top: 1rem;
 }
-
 @media screen and (min-width: 768px) {
   .menu-item {
     grid-template-columns: 225px 1fr;
     gap: 0 1.25rem;
     max-width: 40rem;
   }
-  .photo {
+  .img {
     height: 175px;
   }
 }
@@ -230,7 +184,7 @@ Menu
     width: 95vw;
     grid-template-columns: 1fr 1fr;
   }
-  .photo {
+  .img {
     height: 150px;
   }
 }
