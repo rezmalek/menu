@@ -1,7 +1,7 @@
 # Menu
 
 ### React.js
-https://rezmalek.github.io/menu/
+
 
 ### Functionality
 * Used Set() object in order to store unique values of menu items' categories.
