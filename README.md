@@ -1,6 +1,5 @@
 # Menu
 
-### React.js
 https://rezmalek.github.io/menu/
 
 ### Functionality
