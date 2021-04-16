@@ -128,6 +128,7 @@ p {
   cursor: pointer;
   transition: var(--transition);
   border-radius: var(--radius);
+  outline: none;
 }
 .filter-btn:hover {
   background: var(--clr-gold);

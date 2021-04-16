@@ -1,7 +1,22 @@
 import React from 'react';
 
-function Categories() {
-    return <h1>all</h1>
+function Categories({ categories, filterItems }) {
+  return (
+    <div className='btn-container'>
+      {categories.map((category, index) => {
+        return (
+          <button
+            type='button'
+            key={index}
+            className='filter-btn'
+            onClick={() => filterItems(category)}
+          >
+            {category}
+          </button>
+        );
+      })}
+    </div>
+  );
 }
 
 export default Categories;
